@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f6;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: bisque;
+}
+
+.logo {
+    font-size: 28px;
+    color: #253d35;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c")
+    center/cover;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #b69b70;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.services {
+    text-align: center;
+    padding: 80px 8%;
+}
+
+.services h2,
+.project h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services p {
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    padding: 70px 15px;
+    background: #e9e8e2;
+    transition: 0.3s;
+}
+.service-card h3{
+    margin-bottom: 20px;
+    
+}
+
+.service-card:hover {
+    background: #253d35;
+    color: white;
+    transform: translateY(-8px);
+}
+
+.project {
+    padding: 100px 20px;
+    text-align: center;
+    background: #e5e2d9;
+}
+
+.contact {
+    text-align: center;
+    padding: 100px 20px;
+    background: #253d35;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.experience {
+    padding: 70px 8%;
+    background: white;
+    text-align: center;
+}
+
+.experience-number {
+    margin-bottom: 60px;
+}
+
+.experience-number h2 {
+    font-size: 65px;
+    color:black;
+}
+
+.experience-number h2 span {
+    color: bisque;
+}
+
+.experience-number p {
+    font-size: 18px;
+    color:darkslategrey;
+}
+
+.trusted h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #253d35;
+}
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 35px;
+}
+
+.logo-container img {
+    width: 130px;
+    height: 90px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #171d1a;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    line-height: 2;
+}
+
+.copyright {
+    margin-top: 25px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 60px 6%;
+    }
+}
